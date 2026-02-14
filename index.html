@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project// Password Generator Application</title>
+  <link rel="stylesheet" href="style.css">
+
+<!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+<div class="main-parent-div">
+   
+   <h2>Password Generator 💕</h2>
+  <br>
+  <div class="display section ">
+    <input type="text"  id="display-password" placeholder="Generate Password" readonly>
+  <i class="fa-regular fa-copy" id="copy-btn"></i>
+  </div> <br>
+  
+
+  <div class="charecter-length section">
+    <span>Character Length</span>   
+    <span id="length-value">8</span>
+    <input type="range"  id="range-value" value="8" min="6" max="24">
+  </div> <br>
+  
+
+  <div class="check-box">
+    <input type="checkbox" name="" id="upper-case" checked>
+    <label for="upper-case">Include Uppercase Letters</label> <br>
+
+    <input type="checkbox" name="" id="lower-case" checked>
+    <label for="lower-case">Include Lowercase Letters</label> <br>
+
+    <input type="checkbox" name="" id="numbers" checked>
+    <label for="numbers">Include Numbers</label> <br>
+
+    <input type="checkbox" name="" id="symbols" checked>
+    <label for="symbols">Include Symbols</label> <br>
+  </div>  <br>
+
+  <div class="strength section">
+    <span>STRENGTH:</span>
+    <span id="strength">WEAK</span>
+  </div> <br> 
+
+  <div class="generate section-btn">
+    <button id="generate-btn">GENERATE</button>
+  </div> <br>
+
+  <div class="reset section-btn">
+    <button onclick="reset()" id="reset">RESET</button>
+  </div>
+
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
