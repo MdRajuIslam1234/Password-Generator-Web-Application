@@ -67,7 +67,7 @@ let initialPassword = "";
 
   displayPassword.value = finalPassword ;
 
-  let regEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*~])[a-zA-Z0-9!@#$%^&*~]{8,24}$/
+  let regEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*~])[a-zA-Z0-9!@#$%^&*~]{12,24}$/
   if(regEx.test(finalPassword)){
     strength.textContent = "STRONG";
   }
